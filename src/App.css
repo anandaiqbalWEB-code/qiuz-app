@@ -1,0 +1,75 @@
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+h2 {
+  color: black;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+.quiz-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.quiz-card {
+  background-color: white;
+  color: black;
+  width: 90%;
+  max-width: 555px;
+  margin: 0 auto;
+  padding: 22px;
+  border-radius: 9px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+
+  & .pilihan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    & button {
+      color: gray;
+      height: 55px;
+      width: 90%;
+      background: none;
+      border: 2px solid rgba(128, 128, 128, 0.247);
+      border-radius: 9px;
+      cursor: pointer;
+    }
+
+    & .aktif {
+      border: 2px solid black;
+      color: black;
+    }
+  }
+
+  & .jawab-btn {
+    border: none;
+    padding: 11px 22px;
+    margin: 11px 0;
+    border-radius: 9px;
+    background-color: black;
+    cursor: pointer;
+  }
+
+   & .jawab-btn:active {
+    opacity: 0.5;
+   }
+}
